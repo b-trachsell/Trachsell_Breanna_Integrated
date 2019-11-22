@@ -1,0 +1,351 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* DONT FORGET TO FORMAT THIS STUFF TO MAKE IT MAKE SENSE AND HAVE AN ORDER BINCH*/
+
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+
+}
+
+
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+	height: 200px;
+	padding: 30px;
+}
+
+/* Color for the links in the header 
+Padding lets the whole color be the button*/
+.headerLinks a
+{
+	color:#000;
+	padding:16px;
+	padding-left:120px;
+	padding-right:120px;
+}
+
+/* To do the styling which is the same for both sides of the links*/
+.headerLinks
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 300px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;	
+	background-color: #eee
+
+}
+
+/*individually send them to the far left and far right*/
+#leftNav 
+{
+	margin-right: auto;
+}
+#rightNav
+{
+	margin-left:auto;
+}
+
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#promo p 
+{
+	line-height: 250px;
+}
+
+#promoText 
+{
+	width: 600px;
+}
+
+#promoImage 
+{
+	margin-left: auto;
+	width: 280px;
+}
+
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height to productInfo*/
+#productInfo p 
+{
+	line-height: 300px;
+}
+
+.productDesc 
+{
+	width: 200px;
+}
+
+#mainFooter 
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav 
+{
+	width: 500px;
+}
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 310px;
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	height:500px;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+
+#aboutHeading
+{
+	color: #f00;
+}
+
+#aboutPortrait 
+{
+	width: 440px;
+	height: 500px;
+
+}
+
+#aboutText 
+{
+	margin-left: auto;
+	width: 440px;
+}
+
+/*Page 3*/
+
+#productImages 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: all;
+  	justify-content: space-between;
+
+}
+
+/* Added to img For testing purposes, images should be edited to these sizes*/
+.artImg 
+{
+	width: 280px;
+	height: 280px;
+	background-color: #0ff;
+	cursor:pointer;
+
+}
+
+
+
+.productImgIndex 
+{
+	width: 280px;
+	line-height: 80px;
+	padding-top: 200px;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	/* Currently nothing, Add images when you have them :) */
+	background-image: url(../images/test.png)
+
+}
+
+#contentAreaBigIndex
+{
+	margin-top: 60px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 60px;
+	margin-bottom: 120px;
+	background-color: #000;
+	background-image: url(../images/test.jpeg)
+}
+
+#indexTitle{
+	font-family: Arial;
+	font-size: 30px;
+	line-height: 120px;
+	text-align: center;
+	color:#555;
+	font-weight: bolder;
+	padding-top: 40px;
+	}
+
+#indexBody{
+	text-align: justify;
+	width:500px;
+	margin:auto;
+	padding:15px;
+	color:red;
+	line-height: 20px;
+}
+
+#promoImageBig
+{
+	width: 920px;
+}
+
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+	width: 410px;
+}
+
+.productDescLargeRight 
+{
+	width: 410px;
+}
+
+.contactHeading
+{
+	font-family: arial;
+	font-size: 30px;
+	text-align: center;
+}
+
+#contentContact1
+{
+	margin-top: 60px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 60px;
+	margin-bottom: 120px;
+	background-color: #000;
+}
+
+#contentContact2
+{
+	margin-top: 60px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 60px;
+	margin-bottom: 120px;
+	background-color: #000;
+}
