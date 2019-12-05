@@ -8,12 +8,16 @@
 /*Remove this rule, this is only for demo purposes to make the boxes black with white text
 The line height on the <p> tag gives each box a height value*/
 
+@font-face {
+font-family: "BebasNeue-Regular";
+src: url("../assets/documents/font/BebasNeue-Regular.eot");
+src: url("../assets/documents/font/BebasNeue-Regular.woff") format("woff"),
+url("../assets/documents/font/BebasNeue-Regular.otf") format("opentype"),
+url("../assets/documents/font/BebasNeue-Regular.ttf") format("truetype")
+}
+
 p
 {
-	color: #fff;
-	line-height: 100px;
-	background: #000;
-	text-align: center;
 	margin: 0;
 }
 
@@ -35,9 +39,9 @@ img
 
 /*html selectors*/
 
-body 
+body
 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: BebasNeue-Regular, Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	color: #333;
 }
@@ -54,7 +58,9 @@ a:link, a:visited
 
 a:hover, a:active 
 { 
-	text-decoration:none; 
+	text-decoration: none;
+	border-bottom: 4px solid currentColor; 
+	padding-bottom: 2px;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -68,7 +74,9 @@ a:hover, a:active
 #topBar
 {
 	background-color: #000;
+	margin: auto;
 	height: 20px;
+	width: 955px;
 }
 
 /*Site Container*/
@@ -78,7 +86,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #siteContainer 
 {
 	margin: 0 auto;
-	width: 920px;
+	width: 955px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -86,9 +94,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 /*This is a flex container*/
 #mainHeader
 {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	padding-bottom: 50px;
+	background-color: #D1D1D1;
+	padding: 0px 40px 0px 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -103,17 +110,18 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 {
 	width: 200px;
 	height: 200px;
-	padding: 30px;
+	padding: 42px 0px 42px 0px;
 }
 
 /* Color for the links in the header 
 Padding lets the whole color be the button*/
 .headerLinks a
 {
-	color:#000;
-	padding:16px;
-	padding-left:120px;
-	padding-right:120px;
+	font-family: BebasNeue-Regular, Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	letter-spacing: 1px;
+	color:#196F86;
+	padding: 45px 120px 45px 120px;
 }
 
 /* To do the styling which is the same for both sides of the links*/
@@ -121,12 +129,11 @@ Padding lets the whole color be the button*/
 {
 	margin-top: auto;
 	margin-bottom: auto;
-	width: 300px;
-	height: 60px;
-	line-height: 60px;
+	width: 360px;
+	line-height: 109px;
 	text-align: center;
 	font-size: 20px;	
-	background-color: #eee
+	background-color: #fff
 
 }
 
@@ -191,22 +198,45 @@ Padding lets the whole color be the button*/
 
 #mainFooter 
 {
-	margin-top: 40px;
+	margin-top: 80px;
 	margin-bottom: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
+  	background-color: #D1D1D1;
+  	height: 106px;
 }
 
 #footerNav 
 {
-	width: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 217px;
+	height: 30px;
+	margin:58px 29.5px; 
+	font-size: 24px;
+
+}
+
+
+#footerSocial img{
+	margin:45px 5px 58px 5px;
+}
+
+#footerNav a
+{
+	color: #BA1C07;
+
 }
 
 #copyRight 
 {
+	height: 30px;
+	margin: 58px 29.5px 0px 0px; 
 	margin-left: auto;
-	width: 310px;
+	font-size: 24px;
+	color: #BA1C07;
 }
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
@@ -245,11 +275,12 @@ Padding lets the whole color be the button*/
 
 #productImages 
 {
-	margin-top: 40px;
+	margin: 40px 0px 40px ;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: all;
-  	justify-content: space-between;
+  	justify-content: space-evenly;
+
 
 }
 
@@ -267,44 +298,56 @@ Padding lets the whole color be the button*/
 
 .productImgIndex 
 {
-	width: 280px;
-	line-height: 80px;
-	padding-top: 200px;
-	text-align: center;
+	
+	font-size: 32px;
+	letter-spacing: 0px;
+	line-height: 32px;
+	padding: 184px 40px 40px;
+	text-align: left;
 	color: #fff;
 	background-color: #000;
-	/* Currently nothing, Add images when you have them :) */
-	background-image: url(../images/test.png)
+	margin:15px;
+	width:270px;
+}
 
+.GDimage
+{
+	/*background-image: url(../images/test.jpeg);*/
+}
+.CharIimage
+{
+	/*background-image: url(../images/test.jpeg);*/
+}
+.PHOTOGimage
+{
+	/*background-image: url(../images/test.jpeg);*/
 }
 
 #contentAreaBigIndex
 {
-	margin-top: 60px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 60px;
-	margin-bottom: 120px;
+	padding-bottom: 40px;
+	margin: 45px 0px 75px;
 	background-color: #000;
-	background-image: url(../images/test.jpeg)
+	background-image: url(../images/test.jpeg);
 }
 
+
 #indexTitle{
-	font-family: Arial;
-	font-size: 30px;
-	line-height: 120px;
+	font-size: 134px;
+	line-height: 97px;
 	text-align: center;
-	color:#555;
-	font-weight: bolder;
-	padding-top: 40px;
+	color:#000;
+	padding: 47px 0px 37px;
+	margin: 0px ;
 	}
 
 #indexBody{
-	text-align: justify;
-	width:500px;
+	text-align: center;
+	font-size: 28px;
+	width:750px;
 	margin:auto;
-	padding:15px;
-	color:red;
-	line-height: 20px;
+	color:#EFB321;
+	line-height: 33px;
 }
 
 #promoImageBig
