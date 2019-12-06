@@ -1,28 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-/* DONT FORGET TO FORMAT THIS STUFF TO MAKE IT MAKE SENSE AND HAVE AN ORDER BINCH*/
-
-
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
-
 @font-face {
 font-family: "BebasNeue-Regular";
-src: url("../assets/documents/font/BebasNeue-Regular.eot");
-src: url("../assets/documents/font/BebasNeue-Regular.woff") format("woff"),
-url("../assets/documents/font/BebasNeue-Regular.otf") format("opentype"),
-url("../assets/documents/font/BebasNeue-Regular.ttf") format("truetype")
+src: url("../assets/font/BebasNeue-Regular.eot");
+src: url("../assets/font/BebasNeue-Regular.woff") format("woff"),
+url("../assets/font/BebasNeue-Regular.otf") format("opentype"),
+url("../assets/font/BebasNeue-Regular.ttf") format("truetype")
 }
 
-p
-{
-	margin: 0;
-}
 
 /*basic reset*/
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+/*browsers have built in values for elements so we'll reset a few things to zero, 
+you can add to this or remove items as needed*/
 
 div,p,body,header,footer,section,article,nav 
 { 
@@ -37,19 +27,13 @@ img
 	padding: 0; 
 }
 
-/*html selectors*/
-
+/*html selectors************************************************************************************************************/
 body
 {
 	font-family: BebasNeue-Regular, Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	color: #333;
 }
-
-
-/*a:link is for not visited(standard unclicked link), 
-a:visited is for visited, and just a applies to both.*/
-/*a will also style anchor links*/
 
 a:link, a:visited 
 { 
@@ -64,13 +48,12 @@ a:hover, a:active
 }
 
 /*hide elements from browser but show for doc outline*/
-
 .hidden
 {
 	display: none;
 }
 
-
+/*Top Bars, Black for most pages, Colored for art pages************************************************************************************************************/
 #topBar
 {
 	background-color: #000;
@@ -102,9 +85,10 @@ a:hover, a:active
 	height: 20px;
 	width: 955px;
 }
-/*Site Container*/
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+/* End TopBars */
+
+
+
 
 #siteContainer 
 {
@@ -114,7 +98,9 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-right: 20px;
 }
 
-/*This is a flex container*/
+
+
+/* Header ************************************************************************************************************/
 #mainHeader
 {
 	background-color: #D1D1D1;
@@ -126,9 +112,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 }
 
-
-
-/*This is a flex item*/
 #logo
 {
 	width: 200px;
@@ -169,56 +152,12 @@ Padding lets the whole color be the button*/
 {
 	margin-left:auto;
 }
+/* End Header */
 
 
-#promo 
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
 
-/*Get rid of this, here just to give different height to promo*/
-#promo p 
-{
-	line-height: 250px;
-}
 
-#promoText 
-{
-	width: 600px;
-}
-
-#promoImage 
-{
-	margin-left: auto;
-	width: 280px;
-}
-
-#productInfo 
-{
-	margin-top: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-}
-
-/*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
-{
-	line-height: 300px;
-}
-
-.productDesc 
-{
-	width: 200px;
-}
-
+/* Footer ************************************************************************************************************/
 #mainFooter 
 {
 	margin-top: 80px;
@@ -242,7 +181,6 @@ Padding lets the whole color be the button*/
 
 }
 
-
 #footerSocial img{
 	margin:45px 5px 58px 5px;
 }
@@ -261,8 +199,80 @@ Padding lets the whole color be the button*/
 	font-size: 24px;
 	color: #BA1C07;
 }
+/* End Footer*/
 
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+
+
+
+/* Index ************************************************************************************************************/
+#contentAreaBigIndex
+{
+	padding-bottom: 40px;
+	margin: 45px 0px 75px;
+	background-color: #000;
+	background-image: url(../images/test.jpeg);
+}
+
+#indexTitle{
+	font-size: 134px;
+	line-height: 97px;
+	text-align: center;
+	color:#000;
+	padding: 47px 0px 37px;
+	margin: 0px ;
+	}
+
+#indexBody{
+	text-align: center;
+	font-size: 28px;
+	width:750px;
+	margin:auto;
+	color:#EFB321;
+	line-height: 33px;
+}
+
+#productImages 
+{
+	margin: 40px 0px 40px ;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-evenly;
+  	flex-wrap: wrap;
+
+}
+
+.productImgIndex 
+{
+	font-size: 32px;
+	letter-spacing: 0px;
+	line-height: 32px;
+	padding: 184px 40px 40px;
+	text-align: left;
+	color: #fff;
+	background-color: #000;
+	margin:15px;
+	width:208px;
+}
+
+.GDimage
+{
+	/*background-image: url(../images/test.jpeg);*/
+}
+.CharIimage
+{
+	/*background-image: url(../images/test.jpeg);*/
+}
+.PHOTOGimage
+{
+	/*background-image: url(../images/test.jpeg);*/
+}
+
+/* End Index */
+
+
+
+/* About ************************************************************************************************************/
 
 #contentCon {
 	margin-top: 40px;
@@ -301,10 +311,28 @@ Padding lets the whole color be the button*/
 
 }
 
+/* End About */
 
 
-/*Page 3*/
 
+
+/* Art Pages ************************************************************************************************************/
+
+/* Added to img For testing purposes, images should be edited to these sizes*/
+.artImg 
+{
+	margin: 0px 0px 40px 0px;
+	width: 280px;
+	height: 280px;
+
+}
+/* End Art Pages */
+
+
+
+
+
+/* Art Navigation */
 #artNav
 {
 	margin: 40px 0px 40px ;
@@ -324,13 +352,11 @@ Padding lets the whole color be the button*/
 
 #artNavButtonGD a
 {
-	
 	color: #BA1C07;
 }
 
 #artNavButtonCI a
 {
-	
 	color: #EFB321;
 
 }
@@ -339,101 +365,15 @@ Padding lets the whole color be the button*/
 {
 	color: #196F86;
 }
-
-
-#productImages 
-{
-	margin: 40px 0px 40px ;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-evenly;
-  	flex-wrap: wrap;
-
-
-}
-
-/* Added to img For testing purposes, images should be edited to these sizes*/
-.artImg 
-{
-	margin: 0px 0px 40px 0px;
-	width: 280px;
-	height: 280px;
-	cursor:pointer;
-
-}
+/* End Art Navigation */
 
 
 
-.productImgIndex 
-{
-	font-size: 32px;
-	letter-spacing: 0px;
-	line-height: 32px;
-	padding: 184px 40px 40px;
-	text-align: left;
-	color: #fff;
-	background-color: #000;
-	margin:15px;
-	width:208px;
-}
-
-.GDimage
-{
-	/*background-image: url(../images/test.jpeg);*/
-}
-.CharIimage
-{
-	/*background-image: url(../images/test.jpeg);*/
-}
-.PHOTOGimage
-{
-	/*background-image: url(../images/test.jpeg);*/
-}
-
-#contentAreaBigIndex
-{
-	padding-bottom: 40px;
-	margin: 45px 0px 75px;
-	background-color: #000;
-	background-image: url(../images/test.jpeg);
-}
 
 
-#indexTitle{
-	font-size: 134px;
-	line-height: 97px;
-	text-align: center;
-	color:#000;
-	padding: 47px 0px 37px;
-	margin: 0px ;
-	}
-
-#indexBody{
-	text-align: center;
-	font-size: 28px;
-	width:750px;
-	margin:auto;
-	color:#EFB321;
-	line-height: 33px;
-}
-
-#promoImageBig
-{
-	width: 920px;
-}
 
 
-/*Page 4*/
-
-.productDescLargeLeft 
-{
-	width: 410px;
-}
-
-.productDescLargeRight 
-{
-	width: 410px;
-}
+/*Contact************************************************************************************************************/
 
 .contactHeading
 {
@@ -501,5 +441,5 @@ Padding lets the whole color be the button*/
 	width:532px;
 }
 
-
+/* End Contact ************************************************************************************************************/
 
