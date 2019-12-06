@@ -2,37 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Contact</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
+    <h1 hidden> Contact </h1>
+	<div id="topBar"></div><!--end topBar-->
 	<div id="siteContainer">
 
     	<nav>
+        <h2 hidden> Header </h2>
         <header id="mainHeader">
             <div class="headerLinks" id="leftNav"><a href ="about.html">About</a></div>
-            <div id="logo"><a href ="index.html"><img src="images/logo.png"> </a></div><!--end logo-->
+            <div id="logo"><a href ="index.html"><img src="images/logo.png" alt=" The Artists Logo "> </a></div><!--end logo-->
             <div class="headerLinks" id="rightNav"><a href ="Contact.html">Contact</a></div>
          <!--end mainNav-->
         </header><!--end mainHeader-->
         </nav>
 
-        <h2 class="contentHeading"> Heading </h2>
-        <section id="contentContact1">
-            
-        	<p>Content Area</p>
+        <div class="contactHeading"> Commission Info </div>
+        <section class="contentContact">
+        <h2 hidden> Commission Information </h2>
+            <div id="commissionCopy">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </div>
+            <div id="commissionExamples">
+                E
+            </div>
         </section>
 
 
-        <h2 class="contentHeading"> Heading </h2>
-        <section id="contentContact2">
-            <p>Content Area</p>
+        <div class="contactHeading"> Contact Me! </div>
+        <section class="contentContact">
+        <h2 hidden> Contact Form </h2>
+            <div id="formLabels"> 
+                <p class="formLabel">Name: </p>
+                <p class="formLabel">E-mail: </p>
+                <p class="formLabel">Subject: </p>
+                <p class="formLabel">Message: </p>
+            </div>
+            <form id="contactForm" action="form.php" method="post">
+                        <input type="text" required size="30" placeholder="Enter Your Name" class="formItem">
+                        <input type="email" required size="30" placeholder="Enter Your Email" class="formItem">
+                        <input type="text" required size="30" placeholder="Enter the Subject of Your Message" class="formItem">
+                        <textarea required cols="50" rows="8" class="formItem" placeholder="Your Message Here"></textarea>
+                        <input type="submit" value="submit" class="formItem" >
+                    </form>
         </section>
 
         <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+        <h2 hidden> Footer </h2>
+            <div id="footerNav">
+             <a href="index.html"><p>HOME</p></a>
+             <a href="about.html"><p>ABOUT</p></a> 
+             <a href="contact.html"><p>CONTACT</p></a> 
+            </div><!--end FooterNav-->
+            <div id="footerSocial">
+                 <img src="images/tumblrLogo.png" alt=" Tumblr Logo ">
+                 <img src="images/twitterLogo.png" alt= " Twitter Logo ">
+                 <img src="images/linkedinLogo.png" alt= " Linkedin Logo ">
+             </div> 
+            <div id="copyRight"><p>© Breanna Trachsell 2019</p></div><!--end Copyright-->
         </footer><!--end mainFooter-->
     </div><!--end siteContainer-->
 <script src="js/main.js"></script>    

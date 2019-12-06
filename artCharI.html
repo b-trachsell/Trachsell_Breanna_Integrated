@@ -2,43 +2,67 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Character Illustration</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
+    <h1 hidden> Character Illustration </h1>
+	<div id="topBarCharI"></div><!--end topBar-->
 	<div id="siteContainer">
 
-    	<nav>
+        <nav>
         <header id="mainHeader">
+        <h2 hidden> Header </h2>
             <div class="headerLinks" id="leftNav"><a href ="about.html">About</a></div>
-            <div id="logo"><a href ="index.html"><img src="images/logo.png"> </a></div><!--end logo-->
+            <div id="logo"><a href ="index.html"><img src="images/logo.png" alt=" The Artists Logo "> </a></div><!--end logo-->
             <div class="headerLinks" id="rightNav"><a href ="Contact.html">Contact</a></div>
          <!--end mainNav-->
         </header><!--end mainHeader-->
-        </nav> 
+        </nav>
 
+        <nav id="artNav">
+        <h2 hidden> Art Category Navigation </h2>
+            <div id="artNavButtonCI" class="artNavBoxes"> 
+                <a href="artCharI.html" >Character Illustration</a>
+            </div>
+            <div id="artNavButtonPH" class="artNavBoxes">
+                <a href="artPhotoG.html" >Photography</a>
+            </div>
+            <div id="artNavButtonGD" class="artNavBoxes">
+            <a href="artGD.html"> Graphic Design</a>
+            </div>
+        </nav>
 
         <section id="productImages">
-            <!-- 3 Per line, Each section a New line -->
+            <h2 hidden> Art Images </h2>
             <!-- Proceed to Insert Photos -->
-            <!-- Try and think about how you want to display whole images, You need java to animate it and 
-            youre an idiot and don't know Java. :) -->
-        	<section class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </section> <section class="artImg"> <img src="images/teest.jpeg" class="artImg" alt="Product Image"> </section>
-            <section class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </section>
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div> 
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div>
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div>
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div> 
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div>
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div>
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div> 
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div>
+            <div class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </div>
         </section>
 
 
-        <section id="productImages">
-            <!-- 3 Per line, Each section a New line -->
-            <section class="artImg"> <img src="images/teest.jpeg" class="artImg" alt="Product Image"> </section><section class="artImg"> <img src="images/test.jpeg" class="artImg" alt="Product Image"> </section>
-            <section class="artImg"> <img src="images/teest.jpeg" class="artImg" alt="Product Image"> </section>
-        </section>
 
         
         <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+        <h2 hidden> Footer </h2>
+            <div id="footerNav">
+             <a href="index.html"><p>HOME</p></a>
+             <a href="about.html"><p>ABOUT</p></a> 
+             <a href="contact.html"><p>CONTACT</p></a> 
+            </div><!--end FooterNav-->
+            <div id="footerSocial">
+                 <img src="images/tumblrLogo.png" alt=" Tumblr Logo ">
+                 <img src="images/twitterLogo.png" alt= " Twitter Logo ">
+                 <img src="images/linkedinLogo.png" alt= " Linkedin Logo ">
+             </div> 
+            <div id="copyRight"><p>© Breanna Trachsell 2019</p></div><!--end Copyright-->
         </footer><!--end mainFooter-->
 
         
