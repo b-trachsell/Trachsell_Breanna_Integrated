@@ -208,17 +208,17 @@ Padding lets the whole color be the button*/
 /* Index ************************************************************************************************************/
 #contentAreaBigIndex
 {
-	padding-bottom: 40px;
-	margin: 45px 0px 75px;
+	
+	margin: 0px 0px 75px;
 	background-color: #000;
-	background-image: url(../images/test.jpeg);
+	background-image: url(../images/heroIndex.jpg);
 }
 
 #indexTitle{
 	font-size: 134px;
 	line-height: 97px;
 	text-align: center;
-	color:#000;
+	color:#fff;
 	padding: 47px 0px 37px;
 	margin: 0px ;
 	}
@@ -230,6 +230,7 @@ Padding lets the whole color be the button*/
 	margin:auto;
 	color:#EFB321;
 	line-height: 33px;
+	padding-bottom: 30px;
 }
 
 #productImages 
@@ -257,15 +258,15 @@ Padding lets the whole color be the button*/
 
 .GDimage
 {
-	/*background-image: url(../images/test.jpeg);*/
+	background-image: url(../images/GD_Thumb.jpg);
 }
 .CharIimage
 {
-	/*background-image: url(../images/test.jpeg);*/
+	background-image: url(../images/DI_Thumb.jpg);
 }
 .PHOTOGimage
 {
-	/*background-image: url(../images/test.jpeg);*/
+	background-image: url(../images/PH_Thumb.jpg);
 }
 
 /* End Index */
