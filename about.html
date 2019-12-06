@@ -2,61 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>About</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
+    <h1 hidden> About </h1>
+	<div id="topBar"></div>
 	<div id="siteContainer">
 
-
     	<nav>
+        <h2 hidden> Header </h2>
         <header id="mainHeader">
             <div class="headerLinks" id="leftNav"><a href ="about.html">About</a></div>
-            <div id="logo"><a href ="index.html"><img src="images/logo.png"> </a></div><!--end logo-->
+            <div id="logo"><a href ="index.html"><img src="images/logo.png" alt=" The Artists Logo "> </a></div>
             <div class="headerLinks" id="rightNav"><a href ="Contact.html">Contact</a></div>
-         <!--end mainNav-->
-        </header><!--end mainHeader-->
+        </header>
         </nav>
 
-
-        <section id="contentCon">
-            
+        <div id="contentCon">
             <!-- Portrait on Left -->
-        	<div>
-                <img id="aboutPortrait" src="images/test_portrait.jpge" >
-            </div>
-
+        	<section>
+            <h3 hidden> Artist Portrait </h2>
+                <img id="aboutPortrait" src="images/test_portrait.jpg" alt=" A Portrait of the artist ">
+            </section>
 
             <!-- Contatiner for text on the right -->
-        	<div id="aboutText">
-                <div id="aboutHeading">
+        	<section id="aboutText">
+            <h2 hidden> Artist Biography </h2>
+                <div class="aboutHeading">
                     <p> Heading </p>
                 </div>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit ex sed neque faucibus imperdiet. Etiam efficitur massa vel enim egestas, et convallis odio mollis. Sed quis sapien euismod, ultricies justo tempus, gravida nisi. Donec ultrices libero et hendrerit venenatis. Nullam in sem id dui auctor consequat. 
                 </p>
-                <div id="aboutHeading">
+                <div class="aboutHeading">
                     <p> Heading 2 </p>
                 </div>
 
                 <p>    
                 Mauris suscipit, sapien vel tempus porttitor, justo arcu feugiat nulla, sed lacinia eros lorem vitae quam. Vestibulum rutrum diam non libero finibus eleifend a ut mauris.  </p>
-            </div><!--end content2-->
-
-        </section><!--end contentCon-->
+            </section><!--end content2-->
+        </div><!--end contentCon-->
 
 
         <footer id="mainFooter">
+            <h2 hidden> Footer </h2>
             <div id="footerNav">
              <a href="index.html"><p>HOME</p></a>
              <a href="about.html"><p>ABOUT</p></a> 
              <a href="contact.html"><p>CONTACT</p></a> 
             </div><!--end FooterNav-->
             <div id="footerSocial">
-                 <img src="images/tumblrLogo.png">
-                 <img src="images/twitterLogo.png">
-                 <img src="images/linkedinLogo.png">
+                 <img src="images/tumblrLogo.png" alt=" Tumblr Logo ">
+                 <img src="images/twitterLogo.png" alt= " Twitter Logo ">
+                 <img src="images/linkedinLogo.png" alt= " Linkedin Logo ">
              </div> 
             <div id="copyRight"><p>© Breanna Trachsell 2019</p></div><!--end Copyright-->
         </footer><!--end mainFooter-->

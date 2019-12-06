@@ -70,7 +70,7 @@ a:hover, a:active
 	display: none;
 }
 
-/*section is block level and no width specidied therefore stretches full screen*/
+
 #topBar
 {
 	background-color: #000;
@@ -79,6 +79,29 @@ a:hover, a:active
 	width: 955px;
 }
 
+#topBarCharI
+{
+	background-color: #EFB321;
+	margin: auto;
+	height: 20px;
+	width: 955px;
+}
+
+#topBarGD
+{
+	background-color: #BA1C07;
+	margin: auto;
+	height: 20px;
+	width: 955px;
+}
+
+#topBarPhotoG
+{
+	background-color: #196F86;
+	margin: auto;
+	height: 20px;
+	width: 955px;
+}
 /*Site Container*/
 /*This is essentially a box that we place the whole site in.  
 We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
@@ -249,10 +272,6 @@ Padding lets the whole color be the button*/
   	height:500px;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-
-
-
 #aboutPortrait 
 {
 	width: 477.5px;
@@ -274,7 +293,7 @@ Padding lets the whole color be the button*/
 	color:#EFB321;
 }
 
-#aboutHeading
+.aboutHeading
 {
 	padding: 20px 0px 5px;
 	color: #fff;
@@ -286,13 +305,49 @@ Padding lets the whole color be the button*/
 
 /*Page 3*/
 
+#artNav
+{
+	margin: 40px 0px 40px ;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-evenly;
+  	font-size: 20px;
+}
+
+.artNavBoxes
+/* Allows the Text to be centered */
+{
+	width:250px;
+	text-align: center;
+}
+
+
+#artNavButtonGD a
+{
+	
+	color: #BA1C07;
+}
+
+#artNavButtonCI a
+{
+	
+	color: #EFB321;
+
+}
+
+#artNavButtonPH a
+{
+	color: #196F86;
+}
+
+
 #productImages 
 {
 	margin: 40px 0px 40px ;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: all;
   	justify-content: space-evenly;
+  	flex-wrap: wrap;
 
 
 }
@@ -300,9 +355,9 @@ Padding lets the whole color be the button*/
 /* Added to img For testing purposes, images should be edited to these sizes*/
 .artImg 
 {
+	margin: 0px 0px 40px 0px;
 	width: 280px;
 	height: 280px;
-	background-color: #0ff;
 	cursor:pointer;
 
 }
@@ -311,7 +366,6 @@ Padding lets the whole color be the button*/
 
 .productImgIndex 
 {
-	
 	font-size: 32px;
 	letter-spacing: 0px;
 	line-height: 32px;
@@ -320,7 +374,7 @@ Padding lets the whole color be the button*/
 	color: #fff;
 	background-color: #000;
 	margin:15px;
-	width:270px;
+	width:208px;
 }
 
 .GDimage
@@ -395,7 +449,7 @@ Padding lets the whole color be the button*/
 
 }
 
-#contentContact1
+.contentContact
 {
 	display: flex;
 	flex-direction: row;
@@ -412,6 +466,33 @@ Padding lets the whole color be the button*/
 	font-size: 15px;
 }
 
+#formLabels
+{
+	text-align: right;
+	font-size: 15px;
+	margin-top: 12px;
+}
+
+.formLabel
+{
+	
+	padding: 11px;
+}
+
+#contactForm
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding:10px;
+}
+
+.formItem
+{
+	margin: 10px;
+}
+
+
 #commissionExamples
 {
 	margin:21px 21px 21px 0px;
@@ -420,13 +501,5 @@ Padding lets the whole color be the button*/
 	width:532px;
 }
 
-#contentContact2
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	
 
-
-}
 
