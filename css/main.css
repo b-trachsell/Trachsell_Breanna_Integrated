@@ -114,8 +114,6 @@ a:hover, a:active
 
 #logo
 {
-	width: 200px;
-	height: 200px;
 	padding: 42px 0px 42px 0px;
 }
 
@@ -399,13 +397,6 @@ Padding lets the whole color be the button*/
 	background-color: #D1D1D1;
 }
 
-#commissionCopy
-{
-	margin: auto 21px  ;
-	width: 185px;
-	text-align:justify;
-	font-size: 15px;
-}
 
 #formLabels
 {
@@ -434,13 +425,6 @@ Padding lets the whole color be the button*/
 }
 
 
-#commissionExamples
-{
-	margin:21px 21px 21px 0px;
-	height:200px;
-	background-color: #000;
-	width:532px;
-}
 
 /* End Contact ************************************************************************************************************/
 
